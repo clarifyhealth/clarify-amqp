@@ -14,7 +14,7 @@
     "bluebird": "^3.3.4",
     "chai": "^3.5.0",
     "change-case": "^2.3.1",
-    "clarify-logger": "^1.0.0",
+    "clarify-logger": "https://github.com/clarifyhealth/clarify-logger.git",
     "mocha": "^2.4.5",
     "sinon": "^1.17.3",
     "underscore": "^1.8.3"
