@@ -1,0 +1,20 @@
+{
+  "clarify-amqp": {
+    "protocol": "amqp",
+    "server": "ec2-52-32-108-176.us-west-2.compute.amazonaws.com",
+    "vhost": "test",
+    "user": "clarify",
+    "password": "clarify",
+    "application": "UNDEFINED"
+  },
+  "clarify-logger": {
+    "consoleLogLevel": "fatal",
+    "fileLogLevel": "debug",
+    "fileName": "/logs/test.log",
+    "logToGraylog": false,
+    "graylogConfig": {
+      "host": "10.0.1.10",
+      "port": 12201
+    }
+  }
+}
