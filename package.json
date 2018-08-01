@@ -4,7 +4,7 @@
   "description": "Framework used to send and receive messages. Wraps AMQP.",
   "main": "clarify-amqp.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "author": "",
   "license": "UNLICENSED",
@@ -12,15 +12,17 @@
     "amqplib": "^0.4.1",
     "app-root-path": "^1.0.0",
     "bluebird": "^3.3.4",
-    "chai": "^3.5.0",
     "change-case": "^2.3.1",
     "clarify-logger": "https://github.com/clarifyhealth/clarify-logger.git",
-    "mocha": "^2.4.5",
-    "sinon": "^1.17.3",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "mocha": "^5.2.0",
     "chai": "^3.5.0",
     "sinon": "^1.17.3"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
   }
 }

@@ -39,7 +39,9 @@ describe('AMQP', function () {
 
   describe('#consuming', function () {
     before(function (done) {
-      amqp.init().then(done);
+      amqp.init().then(() => {
+        return amqp.channel.purgeQueue(amqp.patientQueue);
+      }).then(() => done());
     });
 
     it('consumes a message', function (done) {
@@ -122,7 +124,7 @@ describe('AMQP', function () {
           expect(reconnectSpy.called).to.be.true;
           expect(reconnectSpy.calledOnce).to.be.true;
           done();
-        }, 1800);
+        }, 2800);
       });
 
     it('should have popped the message off the offline queue',
